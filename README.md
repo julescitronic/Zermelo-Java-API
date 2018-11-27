@@ -1,5 +1,5 @@
 # Zermelo-Java-API
-An easy to use API to implement Zermelo schedules into your app
+An easy to use API to implement Zermelo schedules into your app. developed by Jules Hummelink.
 
 ## Gettingt started (in this case in Android Studio)
 ### Setup
@@ -27,7 +27,7 @@ Now start the API:
 ```java
 zermeloHelper.start(school);
 ```
-It is recommended to run the following commands in an AsyncTask, but for this tutorial, let's enable running netwrok requests on the main thread (only in Android Studio. Use what is supported for your platform):
+It is recommended to run the following commands in an AsyncTask, but for this tutorial, let's enable running network requests on the main thread (only in Android Studio. Use what is supported for your platform):
 ```java
 StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 StrictMode.setThreadPolicy(policy);
@@ -59,7 +59,7 @@ Now start the API:
 ```java
 zermeloHelper.start(school);
 ```
-It is recommended to run the following commands in an AsyncTask, but for this tutorial, let's enable running netwrok requests on the main thread (only in Android Studio, use what is supported for your platform):
+It is recommended to run the following commands in an AsyncTask, but for this tutorial, let's enable running network requests on the main thread (only in Android Studio, use what is supported for your platform):
 ```java
 StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 StrictMode.setThreadPolicy(policy);
@@ -74,7 +74,14 @@ List<Appointment> appointments = zermeloHelper.getAppointments(startTime, endTim
 For example if you want the subject use:
 ```java
 Appointment appointment = appointments.get(0);
-String subject = appointment.getSubject();
+String subject = appointment.getSubject()[0];
 ```
+If an appointment has multiple subjects, locations, groups or teachers, it works like this:
+```java
+String subject1 = appointment.getSubject()[0];
+String subject2 = appointment.getSubject()[1];
+
+# Let me know if you have any problems:
+### julescitronic.nexus@gmail.com
 
 
