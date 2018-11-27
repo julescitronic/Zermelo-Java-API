@@ -42,7 +42,7 @@ Store the token and school for later use!
 First define a start and end time in UNIX time, and you will also need the school and a token:
 ```java
 long startTime = 1543357871;
-lond endTime = 154347839;
+long endTime = 154347839;
 String token = "testToken";
 String school = "testSchool";
 
