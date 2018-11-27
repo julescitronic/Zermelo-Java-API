@@ -27,12 +27,12 @@ Now start the API:
 ```java
 zermeloHelper.start(school);
 ```
-It is recommended to run the following commands in an AsyncTask, but for this tutorial, let's enable running netwrok requests on the main thread (only in Android Studio, use what is supported for your platform):
+It is recommended to run the following commands in an AsyncTask, but for this tutorial, let's enable running netwrok requests on the main thread (only in Android Studio. Use what is supported for your platform):
 ```java
 StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 StrictMode.setThreadPolicy(policy);
 ```
-Then finally, get the code by running the following command:
+Then finally, get the token by running the following command:
 ```java
 String token = zermeloHelper.getToken(code);
 ```
