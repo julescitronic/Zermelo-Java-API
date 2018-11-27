@@ -67,13 +67,13 @@ StrictMode.setThreadPolicy(policy);
 Now finally get a List<Appointment> by using:
 
 ```java
-List<Appointment> = zermeloHelper.getAppointments(startTime, endTime, token);
+List<Appointment> appoinments = zermeloHelper.getAppointments(startTime, endTime, token);
 ```
 
 ### Get data from an appointment
 For example if you want the subject use:
 ```java
-Appointment appointment;
+Appointment appointment = appointments.get(0);
 String subject = appointment.getSubject();
 ```
 
