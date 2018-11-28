@@ -1,7 +1,7 @@
 # Zermelo-Java-API
 An easy to use API to implement Zermelo schedules into your app. developed by Jules Hummelink.
 
-## Gettingt started (in this case in Android Studio)
+## Getting started (in this case in Android Studio)
 ### Setup
 1. Import the ZermeloAPI.jar into your project.
 2. Make sure you add it to your project dependencies.
