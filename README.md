@@ -80,6 +80,7 @@ If an appointment has multiple subjects, locations, groups or teachers, it works
 ```java
 String subject1 = appointment.getSubject()[0];
 String subject2 = appointment.getSubject()[1];
+```
 
 # Let me know if you have any problems:
 ### julescitronic.nexus@gmail.com
